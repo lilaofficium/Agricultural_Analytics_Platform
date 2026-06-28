@@ -1,0 +1,1 @@
+#Domain | Area | Element | Item | Year | Unit | Value

@@ -1,0 +1,1 @@
+#Year | Country | avg_temp
