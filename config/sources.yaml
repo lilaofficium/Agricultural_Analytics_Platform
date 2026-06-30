@@ -1,0 +1,24 @@
+default_format: csv
+
+sources:
+  production:
+    file_path: "storage/bronze/pesticides.csv"
+    format: csv
+
+  rainfall:
+    file_path: "storage/bronze/rainfall.csv"
+    format: csv
+
+  temperature:
+    file_path: "storage/bronze/temp.csv"
+    format: csv
+
+  production_coded:
+    file_path: "storage/bronze/yield.csv"
+    format: csv
+
+  crop_analytics:
+    file_path: "storage/bronze/yield_df.csv"
+    format: csv
+
+    ### add API JSON Files

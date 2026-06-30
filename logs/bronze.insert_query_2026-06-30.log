@@ -1,0 +1,96 @@
+2026-06-30 18:43:01,679 | bronze.insert_query | INFO | [bronze.production] Inserted 20 rows.
+2026-06-30 18:43:15,033 | bronze.insert_query | INFO | [production] Logged pipeline run 8114786a-72c6-4808-bbcc-6c874bf11474 (failed)
+2026-06-30 18:43:20,757 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 18:43:31,835 | bronze.insert_query | INFO | [rainfall] Logged pipeline run 8114786a-72c6-4808-bbcc-6c874bf11474 (failed)
+2026-06-30 18:58:10,012 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 18:58:21,026 | bronze.insert_query | INFO | [production] Logged pipeline run eab79dd8-c3c8-4906-b7e0-206c4dd33e5d (failed)
+2026-06-30 18:58:26,983 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 18:58:38,067 | bronze.insert_query | INFO | [rainfall] Logged pipeline run eab79dd8-c3c8-4906-b7e0-206c4dd33e5d (failed)
+2026-06-30 18:58:44,139 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 18:58:55,261 | bronze.insert_query | INFO | [temperature] Logged pipeline run eab79dd8-c3c8-4906-b7e0-206c4dd33e5d (failed)
+2026-06-30 18:59:01,125 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 18:59:12,501 | bronze.insert_query | INFO | [production_coded] Logged pipeline run eab79dd8-c3c8-4906-b7e0-206c4dd33e5d (failed)
+2026-06-30 18:59:18,338 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 18:59:29,653 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run eab79dd8-c3c8-4906-b7e0-206c4dd33e5d (failed)
+2026-06-30 19:02:20,460 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:02:31,640 | bronze.insert_query | INFO | [production] Logged pipeline run 073e5ec6-b652-41b4-af46-1aa0161ddd47 (failed)
+2026-06-30 19:02:56,257 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:03:07,526 | bronze.insert_query | INFO | [rainfall] Logged pipeline run 073e5ec6-b652-41b4-af46-1aa0161ddd47 (failed)
+2026-06-30 19:03:33,770 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:03:44,787 | bronze.insert_query | INFO | [temperature] Logged pipeline run 073e5ec6-b652-41b4-af46-1aa0161ddd47 (failed)
+2026-06-30 19:04:06,140 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:04:17,404 | bronze.insert_query | INFO | [production_coded] Logged pipeline run 073e5ec6-b652-41b4-af46-1aa0161ddd47 (failed)
+2026-06-30 19:04:52,484 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:05:03,551 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run 073e5ec6-b652-41b4-af46-1aa0161ddd47 (failed)
+2026-06-30 19:07:20,862 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:07:32,414 | bronze.insert_query | INFO | [production] Logged pipeline run ec4ca40b-7443-4e92-9d70-2b88c93701f9 (failed)
+2026-06-30 19:07:57,539 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:08:08,934 | bronze.insert_query | INFO | [rainfall] Logged pipeline run ec4ca40b-7443-4e92-9d70-2b88c93701f9 (failed)
+2026-06-30 19:08:50,255 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:09:01,486 | bronze.insert_query | INFO | [production] Logged pipeline run 76c8644f-048b-42fb-b4fd-c1aafee61272 (failed)
+2026-06-30 19:11:45,034 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:11:56,289 | bronze.insert_query | INFO | [rainfall] Logged pipeline run 76c8644f-048b-42fb-b4fd-c1aafee61272 (failed)
+2026-06-30 19:12:02,162 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:12:13,421 | bronze.insert_query | INFO | [temperature] Logged pipeline run 76c8644f-048b-42fb-b4fd-c1aafee61272 (failed)
+2026-06-30 19:12:19,214 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:12:36,433 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:12:47,733 | bronze.insert_query | INFO | [production] Logged pipeline run 0a1886ac-17ba-46b6-91bc-6d49a922427e (failed)
+2026-06-30 19:12:51,476 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:12:51,691 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:12:56,556 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:13:02,503 | bronze.insert_query | INFO | [production] Logged pipeline run d6806f1b-79ff-40cb-b70f-19f7e3cc151a (failed)
+2026-06-30 19:13:02,757 | bronze.insert_query | INFO | [production] Logged pipeline run f5330a10-020b-4a3e-947d-d9454ffbe0c0 (failed)
+2026-06-30 19:13:07,491 | bronze.insert_query | INFO | [rainfall] Logged pipeline run 0a1886ac-17ba-46b6-91bc-6d49a922427e (failed)
+2026-06-30 19:13:10,394 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:13:12,548 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:13:13,041 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:13:21,447 | bronze.insert_query | INFO | [rainfall] Logged pipeline run d6806f1b-79ff-40cb-b70f-19f7e3cc151a (failed)
+2026-06-30 19:13:23,607 | bronze.insert_query | INFO | [rainfall] Logged pipeline run f5330a10-020b-4a3e-947d-d9454ffbe0c0 (failed)
+2026-06-30 19:13:24,078 | bronze.insert_query | INFO | [temperature] Logged pipeline run 0a1886ac-17ba-46b6-91bc-6d49a922427e (failed)
+2026-06-30 19:13:27,204 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:13:29,261 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:13:29,797 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:13:38,744 | bronze.insert_query | INFO | [temperature] Logged pipeline run d6806f1b-79ff-40cb-b70f-19f7e3cc151a (failed)
+2026-06-30 19:13:40,534 | bronze.insert_query | INFO | [temperature] Logged pipeline run f5330a10-020b-4a3e-947d-d9454ffbe0c0 (failed)
+2026-06-30 19:13:41,756 | bronze.insert_query | INFO | [production_coded] Logged pipeline run 0a1886ac-17ba-46b6-91bc-6d49a922427e (failed)
+2026-06-30 19:13:44,799 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:13:46,296 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:13:47,386 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:13:56,180 | bronze.insert_query | INFO | [production_coded] Logged pipeline run d6806f1b-79ff-40cb-b70f-19f7e3cc151a (failed)
+2026-06-30 19:13:57,388 | bronze.insert_query | INFO | [production_coded] Logged pipeline run f5330a10-020b-4a3e-947d-d9454ffbe0c0 (failed)
+2026-06-30 19:13:58,447 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run 0a1886ac-17ba-46b6-91bc-6d49a922427e (failed)
+2026-06-30 19:14:02,560 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:14:03,317 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:14:13,927 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run d6806f1b-79ff-40cb-b70f-19f7e3cc151a (failed)
+2026-06-30 19:14:14,404 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run f5330a10-020b-4a3e-947d-d9454ffbe0c0 (failed)
+2026-06-30 19:17:13,182 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:17:18,136 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:17:24,304 | bronze.insert_query | INFO | [production] Logged pipeline run 02b9160b-142a-44dd-a2e1-6232bbc09589 (failed)
+2026-06-30 19:17:29,667 | bronze.insert_query | INFO | [production] Logged pipeline run c24f5ebd-3d88-4f0a-a637-52ed40d970ac (failed)
+2026-06-30 19:17:35,549 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:17:38,908 | bronze.insert_query | ERROR | [insert_dataframe] Failed to insert into bronze.rainfall: 'Area'
+2026-06-30 19:17:46,951 | bronze.insert_query | INFO | [rainfall] Logged pipeline run 02b9160b-142a-44dd-a2e1-6232bbc09589 (failed)
+2026-06-30 19:17:50,071 | bronze.insert_query | INFO | [rainfall] Logged pipeline run c24f5ebd-3d88-4f0a-a637-52ed40d970ac (failed)
+2026-06-30 19:17:52,876 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:17:55,790 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:18:04,204 | bronze.insert_query | INFO | [temperature] Logged pipeline run 02b9160b-142a-44dd-a2e1-6232bbc09589 (failed)
+2026-06-30 19:18:07,230 | bronze.insert_query | INFO | [temperature] Logged pipeline run c24f5ebd-3d88-4f0a-a637-52ed40d970ac (failed)
+2026-06-30 19:18:09,977 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:18:12,819 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:18:21,249 | bronze.insert_query | INFO | [production_coded] Logged pipeline run 02b9160b-142a-44dd-a2e1-6232bbc09589 (failed)
+2026-06-30 19:18:24,063 | bronze.insert_query | INFO | [production_coded] Logged pipeline run c24f5ebd-3d88-4f0a-a637-52ed40d970ac (failed)
+2026-06-30 19:18:27,034 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:18:29,902 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']
+2026-06-30 19:18:38,356 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run 02b9160b-142a-44dd-a2e1-6232bbc09589 (failed)
+2026-06-30 19:18:40,983 | bronze.insert_query | INFO | [crop_analytics] Logged pipeline run c24f5ebd-3d88-4f0a-a637-52ed40d970ac (failed)
+2026-06-30 19:20:33,253 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:20:44,788 | bronze.insert_query | INFO | [production] Logged pipeline run 2f161599-ca17-4e7b-af89-d1711fd7629b (failed)
+2026-06-30 19:22:50,870 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production'. Available: ['bronze.rainfall']
+2026-06-30 19:23:02,200 | bronze.insert_query | INFO | [production] Logged pipeline run be02099b-08af-463b-b490-f917f999c698 (failed)
+2026-06-30 19:24:06,996 | bronze.insert_query | INFO | [bronze.rainfall] Inserted 19 rows.
+2026-06-30 19:24:18,636 | bronze.insert_query | INFO | [rainfall] Logged pipeline run be02099b-08af-463b-b490-f917f999c698 (failed)
+2026-06-30 19:24:24,225 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.temperature'. Available: ['bronze.rainfall']
+2026-06-30 19:24:35,375 | bronze.insert_query | INFO | [temperature] Logged pipeline run be02099b-08af-463b-b490-f917f999c698 (failed)
+2026-06-30 19:24:41,257 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.production_coded'. Available: ['bronze.rainfall']
+2026-06-30 19:24:52,348 | bronze.insert_query | INFO | [production_coded] Logged pipeline run be02099b-08af-463b-b490-f917f999c698 (failed)
+2026-06-30 19:24:58,158 | bronze.insert_query | ERROR | [insert_dataframe] Validation error: No preparer registered for table: 'bronze.crop_analytics'. Available: ['bronze.rainfall']

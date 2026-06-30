@@ -1,1 +1,0 @@
-#Area | Year | average_rain_fall_mm_per_year
