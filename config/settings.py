@@ -25,6 +25,14 @@ class Settings(BaseSettings):
     postgres_port:     str = os.getenv("POSTGRES_PORT",     "5432")
     postgres_db:       str = os.getenv("POSTGRES_DB",       "postgres")
     # postgres_sslmode:  str = os.getenv("POSTGRES_SSLMODE",  "require")
+    
+    snowflake_user:     str = os.getenv("SNOWFLAKE_USER",     "")
+    snowflake_password:     str = os.getenv("SNOWFLAKE_PASSWORD",     "")
+    snowflake_account:     str = os.getenv("SNOWFLAKE_ACCOUNT",     "")
+    snowflake_warehouse:     str = os.getenv("SNOWFLAKE_WAREHOUSE",     "")
+    snowflake_database:     str = os.getenv("SNOWFLAKE_DATABASE",     "")
+    snowflake_schema:     str = os.getenv("SNOWFLAKE_SCHEMA",     "") 
+
 
     class Config:
         env_file          = ".env"
@@ -38,6 +46,15 @@ class Settings(BaseSettings):
                     f"postgresql+psycopg2://{self.postgres_user}:{self.postgres_password}@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
                     f"?sslmode=require"
                 )
+    # for silver
+    @property
+    def snowflake_url(self) -> str:
+        return (
+            f"snowflake://{self.snowflake_user}:{self.snowflake_password}"
+            f"@{self.snowflake_account}/"
+            f"{self.snowflake_database}/{self.snowflake_schema}"
+            f"?warehouse={self.snowflake_warehouse}"
+        )
 
  
 def get_settings() -> Settings:

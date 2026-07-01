@@ -7,4 +7,6 @@ pydantic-settings
 psycopg2-binary
 pandas 
 SQLAlchemy
+snowflake-sqlalchemy 
+snowflake-connector-python
 # pip install -r requirements.txt
