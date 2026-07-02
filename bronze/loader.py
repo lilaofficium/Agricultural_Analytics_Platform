@@ -20,11 +20,7 @@ _VERIFIED_TABLES: set[str] = set()
 
 
 def ensure_table_exists(full_table_name: str, force: bool = False) -> bool:
-    """Ensure a schema-qualified table exists, creating it via migration if needed.
-
-    Result is cached in-process per table name. Pass force=True to bypass
-    the cache and re-check against the DB (e.g. if you suspect drift).
-    """
+   
     full_table_name = full_table_name.strip().lower()
 
     if not force and full_table_name in _VERIFIED_TABLES:

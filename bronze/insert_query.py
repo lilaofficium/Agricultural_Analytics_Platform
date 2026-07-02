@@ -6,7 +6,8 @@ from sqlalchemy import text
 from pathlib import Path
 import pandas as pd
 from utils.logger import get_logger
-import numpy as np
+import numpy as np 
+from datetime import datetime, timezone
 
 logger = get_logger("bronze.insert_query")
 
@@ -90,7 +91,7 @@ def _prepare_temperature(df: pd.DataFrame):
 
 def _prepare_production_coded(df: pd.DataFrame):
     df.columns = df.columns.str.strip()
-    df['domain_code'] = pd.to_numeric(df['Domain Code'], errors='coerce').astype('Int64')
+    df['domain_code'] =  df['Domain Code'].astype(str) 
     df['domain'] = df['Domain'].astype(str)
     df['area_code'] = pd.to_numeric(df['Area Code'], errors='coerce').astype('Int64')
     df['area'] = df['Area'].astype(str)
@@ -124,7 +125,10 @@ def _prepare_production_coded(df: pd.DataFrame):
             :year_code, :year, :unit, :value,
             :_source_file, :_pipeline_run, :_loaded_at
         )''')
-
+    # df.to_csv(
+    #             f"1111-{datetime.now().microsecond}csv_11.csv",
+    #             index=False
+    #         )
     return df, insert_cols, sql
 
 
@@ -223,16 +227,18 @@ def insert_dataframe(df: pd.DataFrame, table: str) -> int:
         missing = [col for col in insert_cols if col not in df.columns]
         if missing:
             raise ValueError(f"[{table}] DataFrame missing required columns: {missing}")
-
-        records_df = df[insert_cols].where(pd.notna(df[insert_cols]), None)
+ 
         engine = get_bronze_engine()
-        row_count = len(records_df)
-
+        row_count = len(df)
+        # df.to_csv(
+        #         f"Transform_Rainfall-{datetime.now().microsecond}csv_11.csv",
+        #         index=False
+        #     )
         if row_count >= COPY_THRESHOLD_ROWS:
-            inserted = _copy_insert(records_df, table, insert_cols, engine)
+            inserted = _copy_insert(df, table, insert_cols, engine)
             method = "COPY"
         else:
-            records_df.to_sql(
+            df.to_sql(
                 name=table.split(".", 1)[1],
                 schema=table.split(".", 1)[0],
                 con=engine,

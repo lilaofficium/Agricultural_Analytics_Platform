@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS silver.temperature_rejects (
 );
 CREATE TABLE IF NOT EXISTS silver.production_coded (
     id BIGINT IDENTITY(1, 1) PRIMARY KEY,
-    domain_code INTEGER,
+    domain_code TEXT,
     domain TEXT,
     area_code INTEGER,
     area TEXT,
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS silver.production_coded (
 );
 CREATE TABLE IF NOT EXISTS silver.production_coded_rejects (
     id BIGINT IDENTITY(1, 1) PRIMARY KEY,
-    domain_code INTEGER,
+    domain_code TEXT,
     domain TEXT,
     area_code INTEGER,
     area TEXT,

@@ -1,7 +1,7 @@
 
 SILVER_RULES = {
     "bronze.production": {
-        "target_table": "silver.production",
+        "target_table": "SILVER.PRODUCTION",
         "reject_table": "silver.production_rejects",
         "dedup_keys":   ["domain", "area", "element", "item", "year"],
         "dtypes": {
@@ -14,7 +14,8 @@ SILVER_RULES = {
             "value": (0, None),
         },
         "allowed_values": {},
-    },
+    }
+    ,
 
     "bronze.rainfall": {
         "target_table": "silver.rainfall",
@@ -45,8 +46,7 @@ SILVER_RULES = {
             "avg_temp": (-90, 60),
         },
         "allowed_values": {},
-    },
-
+    }, 
     "bronze.production_coded": {
         "target_table": "silver.production_coded",
         "reject_table": "silver.production_coded_rejects",
@@ -65,8 +65,7 @@ SILVER_RULES = {
             "value": (0, None),
         },
         "allowed_values": {},
-    },
-
+    }, 
     "bronze.crop_analytics": {
         "target_table": "silver.crop_analytics",
         "reject_table": "silver.crop_analytics_rejects",
@@ -87,5 +86,5 @@ SILVER_RULES = {
             "avg_temp": (-90, 60),
         },
         "allowed_values": {},
-    },
+    }, 
 }

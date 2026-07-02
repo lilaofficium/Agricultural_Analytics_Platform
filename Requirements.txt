@@ -4,9 +4,10 @@
 
 dotenv
 pydantic-settings
-psycopg2-binary
-pandas 
+pandas
 SQLAlchemy
-snowflake-sqlalchemy 
-snowflake-connector-python
+
+snowflake-sqlalchemy
+snowflake-connector-python[pandas]
+pyarrow
 # pip install -r requirements.txt
